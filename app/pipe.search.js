@@ -18,23 +18,20 @@ System.register(['@angular/core'], function(exports_1, context_1) {
                 core_1 = core_1_1;
             }],
         execute: function() {
-            SearchPipe = (function () {
-                function SearchPipe() {
-                }
-                SearchPipe.prototype.transform = function (pipeData, pipeModifier) {
-                    return pipeData.filter(function (eachItem) {
-                        return eachItem['name'].toLowerCase().includes(pipeModifier.toLowerCase()) ||
-                            eachItem['reknown'].toLowerCase().includes(pipeModifier.toLowerCase());
+            SearchPipe = class SearchPipe {
+                transform(pipeData, pipeModiefier) {
+                    return pipeData.filter((eachItem) => {
+                        return eachItem['name'].toLowerCase().includes(pipeModiefier.toLowerCase()) ||
+                            eachItem['reknown'].toLowerCase().includes(pipeModiefier.toLowerCase());
                     });
-                };
-                SearchPipe = __decorate([
-                    core_1.Pipe({
-                        name: 'search'
-                    }), 
-                    __metadata('design:paramtypes', [])
-                ], SearchPipe);
-                return SearchPipe;
-            }());
+                }
+            };
+            SearchPipe = __decorate([
+                core_1.Pipe({
+                    name: 'search'
+                }), 
+                __metadata('design:paramtypes', [])
+            ], SearchPipe);
             exports_1("SearchPipe", SearchPipe);
         }
     }

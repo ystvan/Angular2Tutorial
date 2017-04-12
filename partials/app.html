@@ -9,7 +9,7 @@
 <!-- card search -->
 
 <ul class="artisilist cf" *ngIf="query">
-    <li class="artistlist-item cf" (click)="showArtist(item); query=''" *ngFor="let item of artists">
+    <li class="artistlist-item cf" (click)="showArtist(item); query=''" *ngFor="let item of (artists | search: query)">
         <artist-item class="content" [artist]=item></artist-item>
         
     </li>

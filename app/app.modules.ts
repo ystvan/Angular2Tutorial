@@ -6,6 +6,8 @@ import { AppComponent } from './component.app';
 import { ArtistItemComponent } from './component.artist-item';
 import { ArtistDetailsComponent } from './component.artist-details';
 
+import { SearchPipe } from './pipe.search';
+
 
 @NgModule({
     imports: [
@@ -15,7 +17,8 @@ import { ArtistDetailsComponent } from './component.artist-details';
     declarations: [
         AppComponent,
         ArtistItemComponent,
-        ArtistDetailsComponent
+        ArtistDetailsComponent,
+        SearchPipe
     ],
     bootstrap: [
         AppComponent
