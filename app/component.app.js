@@ -50,7 +50,8 @@ System.register(['@angular/core'], function(exports_1, context_1) {
             AppComponent = __decorate([
                 core_1.Component({
                     selector: 'app',
-                    templateUrl: './partials/app.html'
+                    templateUrl: './partials/app.html',
+                    styleUrls: ["./css/app.css"]
                 }), 
                 __metadata('design:paramtypes', [])
             ], AppComponent);
