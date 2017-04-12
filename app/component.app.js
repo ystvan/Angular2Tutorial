@@ -34,8 +34,9 @@ System.register(['@angular/core'], function(exports_1, context_1) {
                         }
                     ];
                 }
-                onClick(e) {
-                    console.log(e.target);
+                onClick(myItem, myElement) {
+                    this.name = myItem.name;
+                    myElement.style.backgroundColor = "#FECE4E";
                 }
                 addArtist(value) {
                     if (value !== '') {
