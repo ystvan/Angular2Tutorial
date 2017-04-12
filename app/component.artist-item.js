@@ -18,20 +18,17 @@ System.register(['@angular/core'], function(exports_1, context_1) {
                 core_1 = core_1_1;
             }],
         execute: function() {
-            ArtistItemComponent = (function () {
-                function ArtistItemComponent() {
-                }
-                ArtistItemComponent = __decorate([
-                    core_1.Component({
-                        selector: 'artist-item',
-                        templateUrl: 'partials/artist-item.html',
-                        styleUrls: ['css/artist-item.css'],
-                        inputs: ['artist']
-                    }), 
-                    __metadata('design:paramtypes', [])
-                ], ArtistItemComponent);
-                return ArtistItemComponent;
-            }());
+            ArtistItemComponent = class ArtistItemComponent {
+            };
+            ArtistItemComponent = __decorate([
+                core_1.Component({
+                    selector: 'artist-item',
+                    templateUrl: 'partials/artist-item.html',
+                    styleUrls: ['css/artist-item.css'],
+                    inputs: ['artist']
+                }), 
+                __metadata('design:paramtypes', [])
+            ], ArtistItemComponent);
             exports_1("ArtistItemComponent", ArtistItemComponent);
         }
     }

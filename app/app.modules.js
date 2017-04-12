@@ -1,4 +1,4 @@
-System.register(['@angular/core', '@angular/platform-browser', '@angular/forms', './component.app'], function(exports_1, context_1) {
+System.register(['@angular/core', '@angular/platform-browser', '@angular/forms', './component.app', './component.artist-item'], function(exports_1, context_1) {
     "use strict";
     var __moduleName = context_1 && context_1.id;
     var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -10,7 +10,7 @@ System.register(['@angular/core', '@angular/platform-browser', '@angular/forms',
     var __metadata = (this && this.__metadata) || function (k, v) {
         if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
     };
-    var core_1, platform_browser_1, forms_1, component_app_1;
+    var core_1, platform_browser_1, forms_1, component_app_1, component_artist_item_1;
     var AppModule;
     return {
         setters:[
@@ -25,6 +25,9 @@ System.register(['@angular/core', '@angular/platform-browser', '@angular/forms',
             },
             function (component_app_1_1) {
                 component_app_1 = component_app_1_1;
+            },
+            function (component_artist_item_1_1) {
+                component_artist_item_1 = component_artist_item_1_1;
             }],
         execute: function() {
             AppModule = class AppModule {
@@ -36,7 +39,8 @@ System.register(['@angular/core', '@angular/platform-browser', '@angular/forms',
                         forms_1.FormsModule
                     ],
                     declarations: [
-                        component_app_1.AppComponent
+                        component_app_1.AppComponent,
+                        component_artist_item_1.ArtistItemComponent
                     ],
                     bootstrap: [
                         component_app_1.AppComponent

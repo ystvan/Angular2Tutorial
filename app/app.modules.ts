@@ -3,6 +3,8 @@ import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule } from '@angular/forms';
 
 import { AppComponent } from './component.app';
+import { ArtistItemComponent } from './component.artist-item';
+
 
 @NgModule({
     imports: [
@@ -10,7 +12,8 @@ import { AppComponent } from './component.app';
         FormsModule
     ],
     declarations: [
-        AppComponent
+        AppComponent,
+        ArtistItemComponent
     ],
     bootstrap: [
         AppComponent
