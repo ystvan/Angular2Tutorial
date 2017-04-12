@@ -8,8 +8,11 @@
 </div>
 <!-- card search -->
 
-<ul class="artisilist cf">
-    <li class="artistlist-item cf" *ngFor="let item of artists">
+<ul class="artisilist cf" *ngIf="query">
+    <li class="artistlist-item cf" (click)="showArtist(item); query=''" *ngFor="let item of artists">
         <artist-item class="content" [artist]=item></artist-item>
+        
     </li>
 </ul>
+
+<artist-details *ngIf="currentArtist" [artist]="currentArtist"></artist-details>

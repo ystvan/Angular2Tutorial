@@ -25,6 +25,9 @@ System.register(['@angular/core'], function(exports_1, context_1) {
                 constructor() {
                     this.artists = ARTISTS;
                 }
+                showArtist(item) {
+                    this.currentArtist = item;
+                }
             };
             AppComponent = __decorate([
                 core_1.Component({

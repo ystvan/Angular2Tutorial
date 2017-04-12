@@ -4,6 +4,7 @@ import { FormsModule } from '@angular/forms';
 
 import { AppComponent } from './component.app';
 import { ArtistItemComponent } from './component.artist-item';
+import { ArtistDetailsComponent } from './component.artist-details';
 
 
 @NgModule({
@@ -13,7 +14,8 @@ import { ArtistItemComponent } from './component.artist-item';
     ],
     declarations: [
         AppComponent,
-        ArtistItemComponent
+        ArtistItemComponent,
+        ArtistDetailsComponent
     ],
     bootstrap: [
         AppComponent
