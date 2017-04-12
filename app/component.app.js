@@ -34,6 +34,9 @@ System.register(['@angular/core'], function(exports_1, context_1) {
                         }
                     ];
                 }
+                onClick(e) {
+                    console.log(e.target);
+                }
             };
             AppComponent = __decorate([
                 core_1.Component({

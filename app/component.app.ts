@@ -9,6 +9,10 @@ export class AppComponent {
     name: string;
     artists: any;
 
+    onClick(e){
+        console.log(e.target);
+    }
+
     constructor() {
         this.name = 'Xhou Ta';
         this.artists = [
