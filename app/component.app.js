@@ -37,6 +37,14 @@ System.register(['@angular/core'], function(exports_1, context_1) {
                 onClick(e) {
                     console.log(e.target);
                 }
+                addArtist(value) {
+                    if (value !== '') {
+                        this.artists.push({
+                            name: value,
+                            school: 'Hard Knocks'
+                        });
+                    }
+                }
             };
             AppComponent = __decorate([
                 core_1.Component({

@@ -13,6 +13,15 @@ export class AppComponent {
         console.log(e.target);
     }
 
+    addArtist(value){
+        if (value!==''){
+            this.artists.push ({
+                name: value,
+                school: 'Hard Knocks'
+            });
+        }
+    }
+
     constructor() {
         this.name = 'Xhou Ta';
         this.artists = [
